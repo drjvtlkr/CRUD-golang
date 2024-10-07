@@ -1,11 +1,18 @@
-# Simple HTTP Server in Go
+# Simple CRUD application in Go
 
-Welcome to the **Simple HTTP Server in Go**! 🎉 This project showcases my journey in learning Go by creating a basic HTTP server with two main functionalities: fetching and posting data.
+Welcome to the **Simple CRUD application in Go**! 🎉 This project showcases my journey in learning Go by creating a basic CRUD RESTful APIs.
 
 ## 🚀 Features
 
-- **GET /data**: Fetches data from the server.
+- **GET /data**: Fetches data from the Movies server. As a starting point Two movies get added when you run the server:
+    ```bash
+    go run main.go
+
 - **POST /data**: Allows you to send data to the server.
+
+- **PUT /data**: Update Movie details
+
+- **DELETE /data**: Delete data from the server
 
 ## 📚 Getting Started
 
@@ -13,7 +20,7 @@ To get started, follow these simple steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/drjvtlkr/http-server-go.git
+   git clone https://github.com/drjvtlkr/CRUD-golang.git
 
 2. Install Go (if you haven't already) from the official site[].
 
@@ -21,7 +28,22 @@ To get started, follow these simple steps:
     ```bash 
     go run main.go
 
-4. Access the server at http://localhost:8080.
+4. Access the server at http://localhost:4000.
+
+5. Use POSTMAN to test the API endpoints 
+
+- **POST A MOVIE /data**: http://localhost:4000/movies
+
+- **GET ALL MOVIES /data**: http://localhost:4000/movies
+
+- **GET MOVIE BY ID /data**: http://localhost:4000/movie/1
+
+- **UPDATE MOVIE BY ID /data**: http://localhost:4000/movie/1
+
+- **DELETE MOVIES /data**: http://localhost:4000/movie/1
+
+
+
 
 ## 🎉 Acknowledgments
 
